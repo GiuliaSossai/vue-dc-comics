@@ -1,20 +1,26 @@
 // GENERAL
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Raleway', sans-serif;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-a{
+a {
   color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+   list-style: none;
 }
