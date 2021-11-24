@@ -1,0 +1,11 @@
+@mixin flex-btw(){
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@mixin titles {
+   text-transform: uppercase;
+   font-size: 24px;
+   font-weight: bold;
+}

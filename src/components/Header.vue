@@ -2,7 +2,7 @@
   <header>
      <div class="container">
         <div class="header-left">
-            <img src="../assets/img/dc-logo.png" alt="">
+            <a href="#"><img src="../assets/img/dc-logo.png" alt="dc logo"></a> 
          </div>
          <div class="header-right">
             <ul>
@@ -78,27 +78,26 @@ export default {
 </script>
 
 <style lang="scss">
+   @import "../assets/style/var.scss";
+   @import '../assets/style/mixins.scss';
+
    header {
       height: 150px;
       .container {
          height: 150px;
          text-transform: uppercase;
          font-weight: bold;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
+         @include flex-btw;
          ul {
             height: 147px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-btw;
             a {
                padding: 0 1rem;
                line-height: 147px;
                &.active,
                &:hover {
-                  color: #0282F9;
-                  border-bottom: 3px solid #0282F9;
+                  color: $main-color;
+                  border-bottom: 3px solid $main-color;
                }
             }
           
