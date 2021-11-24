@@ -1,6 +1,6 @@
 <template>
   <header>
-     <div class="container">
+     <div class="container clearfix">
         <div class="header-left">
             <a href="#"><img src="../assets/img/dc-logo.png" alt="dc logo"></a> 
          </div>
@@ -81,28 +81,68 @@ export default {
    @import "../assets/style/var.scss";
    @import '../assets/style/mixins.scss';
 
+   // header {
+   //    height: 150px;
+   //    .container {
+   //       height: 150px;
+   //       text-transform: uppercase;
+   //       font-weight: bold;
+   //       @include flex-btw;
+   //       ul {
+   //          height: 147px;
+   //          line-height: 147px;
+            
+   //          @include flex-btw;
+   //          a {
+   //             padding: 0 1rem;
+   //             line-height: 147px;
+   //             height: 147px;
+   //             box-sizing: content-box;
+   //             &.active,
+   //             &:hover {
+   //                color: $main-color;
+   //                border-bottom: 3px solid $main-color;
+   //             }
+   //          }
+          
+   //       }
+   //    }
+   // }
+
    header {
       height: 150px;
       .container {
-         height: 150px;
+         height: 142px;
          text-transform: uppercase;
          font-weight: bold;
-         @include flex-btw;
-         ul {
-            height: 147px;
-            @include flex-btw;
-            a {
-               padding: 0 1rem;
-               line-height: 147px;
-               &.active,
-               &:hover {
-                  color: $main-color;
-                  border-bottom: 3px solid $main-color;
-               }
+         .header-left {
+            float: left;
+            img {
+               margin-top: 23px;
             }
-          
+         }
+
+         .header-right {
+            float: right;
+            ul {
+               height: 146px;
+               li {
+                  display: inline-block;
+                  padding: 0 1rem;
+                  a {
+                     line-height: 146px;
+                     box-sizing: content-box;
+                     &.active,
+                     &:hover {
+                        color: $main-color;
+                        border-bottom: 4px solid $main-color;
+                     }
+                  }
+               }   
+            }
          }
       }
+        
    }
    
 </style>

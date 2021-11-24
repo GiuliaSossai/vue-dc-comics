@@ -129,8 +129,6 @@ export default {
     }
   }
 
-  
-  
   .footer-bottom {
     background-color: #303030;
     .container {

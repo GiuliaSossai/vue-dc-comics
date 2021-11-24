@@ -2,5 +2,12 @@
 
 .container {
    max-width: 1320px;
+   min-width: 1000px;
    margin: 0 auto;
 }
+
+.clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+ }
