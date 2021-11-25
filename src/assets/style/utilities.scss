@@ -11,3 +11,11 @@
    display: table;
    clear: both;
  }
+
+ button {
+   background-color: $main-color;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: bold;
+   border: none;
+ }

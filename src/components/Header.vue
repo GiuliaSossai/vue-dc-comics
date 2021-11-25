@@ -7,7 +7,13 @@
          <div class="header-right">
             <ul>
                <li v-for="(link, index) in links" :key="index">
-                  <a :class="{active: link.current}" href="link.url">{{link.text}}</a>
+                  <a 
+                     :class="{active: link.current}" 
+                     @click="link.current = !link.current" 
+                     href="link.url"
+                  >
+                     {{link.text}}
+                  </a>
                </li>
             </ul>
          </div>
@@ -80,34 +86,6 @@ export default {
 <style lang="scss">
    @import "../assets/style/var.scss";
    @import '../assets/style/mixins.scss';
-
-   // header {
-   //    height: 150px;
-   //    .container {
-   //       height: 150px;
-   //       text-transform: uppercase;
-   //       font-weight: bold;
-   //       @include flex-btw;
-   //       ul {
-   //          height: 147px;
-   //          line-height: 147px;
-            
-   //          @include flex-btw;
-   //          a {
-   //             padding: 0 1rem;
-   //             line-height: 147px;
-   //             height: 147px;
-   //             box-sizing: content-box;
-   //             &.active,
-   //             &:hover {
-   //                color: $main-color;
-   //                border-bottom: 3px solid $main-color;
-   //             }
-   //          }
-          
-   //       }
-   //    }
-   // }
 
    header {
       height: 150px;

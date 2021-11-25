@@ -23,6 +23,7 @@ export default {
    .card-box {
       flex-basis: calc(100% / 6);
       border: 1rem solid #1C1C1C;
+      margin-bottom: 1rem;
       img {
          width: 100vw;
          height: 188px;
