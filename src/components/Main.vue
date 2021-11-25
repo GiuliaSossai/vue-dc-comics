@@ -10,8 +10,7 @@
                :key="index" 
                :card="card"
             />  
-         </div>
-         
+         </div>  
       </div>
 
       <button class="btn">load more</button>
@@ -67,7 +66,7 @@ export default {
 
       button.btn{
          font-size: 12px;
-         padding: 8px 32px;
+         padding: 8px 40px;
          margin-bottom: 1rem;      
       }  
    }
